@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightskyblue;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.com.fatec.mavenproject1.CadastrarSalaController">
+   <children>
+      <Label layoutX="43.0" layoutY="45.0" prefHeight="21.0" prefWidth="231.0" style="-fx-background-color: white;" text="Label" />
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="43.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text layoutX="43.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Label layoutX="43.0" layoutY="104.0" prefHeight="21.0" prefWidth="231.0" style="-fx-background-color: white;" text="Label" />
+      <Label layoutX="43.0" layoutY="172.0" prefHeight="21.0" prefWidth="231.0" style="-fx-background-color: white;" text="Label" />
+      <Text layoutX="43.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   </children>
+</AnchorPane>

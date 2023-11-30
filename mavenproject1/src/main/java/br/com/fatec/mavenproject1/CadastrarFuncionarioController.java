@@ -4,39 +4,32 @@
  */
 package br.com.fatec.mavenproject1;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
  *
  * @author caicm
  */
-public class MenuController  {
+public class CadastrarFuncionarioController implements Initializable {
 
     @FXML
-    private Button cadastroSalaClick;
+    private TextField txt_nome;
     @FXML
-    private Button cadastroProfessorClick;
+    private TextField txt_email;
+    @FXML
+    private TextField txt_cpf;
 
     /**
      * Initializes the controller class.
      */
-  
-
-    @FXML
-    private void cadastroSalaClick(ActionEvent event) throws IOException {
-        App.setRoot("cadastrarSala");
-    }
-
-    @FXML
-    private void cadastroProfessorClick(ActionEvent event) throws IOException {
-        App.setRoot("cadastrarFuncionario");
-    }
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+    }    
     
 }

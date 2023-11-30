@@ -6,9 +6,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.com.fatec.mavenproject1.MenuController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.mavenproject1.MenuController">
    <children>
-      <Button fx:id="switchToSecondary" layoutX="128.0" layoutY="129.0" mnemonicParsing="false" onAction="#switchToSecondary" text="Button" />
+      <Button fx:id="cadastroSalaClick" layoutX="362.0" layoutY="112.0" mnemonicParsing="false" onAction="#cadastroSalaClick" prefHeight="66.0" prefWidth="140.0" text="Cadastro Sala" />
+      <Button fx:id="cadastroProfessorClick" layoutX="100.0" layoutY="112.0" mnemonicParsing="false" onAction="#cadastroProfessorClick" prefHeight="66.0" prefWidth="140.0" text="Cadastro Professores" />
    </children>
 </AnchorPane>
