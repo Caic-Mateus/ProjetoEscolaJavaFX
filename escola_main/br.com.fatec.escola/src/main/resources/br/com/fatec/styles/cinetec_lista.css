@@ -1,0 +1,49 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+    -fx-background-color : #121214;
+    -fx-cursor: pointer;
+    -fx-align-content: center;
+    -fx-text-fill: white;
+    -fx-font-color: white;
+}
+
+.col{
+    -fx-alignment: CENTER; 
+}
+
+.column-header {
+
+    -fx-text-fill: Black; /* Cor do texto */
+    -fx-font-weight: bold; /* Negrito */
+}
+.btn{
+    -fx-background-radius : 20px;
+    -fx-border-radius : 20px;
+    -fx-background-color: #1b828f;
+    -fx-padding: 5px;
+    -fx-cursor: pointer;
+}
+.btn:hover{
+    -fx-background-radius : 20px;
+    -fx-border-radius : 20px;
+    -fx-background-color: transparent;
+    -fx-padding: 5px;
+    -fx-cursor: pointer;
+    -fx-border-color:#1b828f ;
+}
+
+.placeholder {
+    -fx-border-radius : 15px;
+    -fx-background-color: transparent;
+    -fx-border-color: #FFDF2B;
+    -fx-background-radius: 10px;
+    -fx-text-fill: whitesmoke; /* Cor do texto */
+}
+.sair:hover{
+    -fx-text-fill: #38b6ff;
+}

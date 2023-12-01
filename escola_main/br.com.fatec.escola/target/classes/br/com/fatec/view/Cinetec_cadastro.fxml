@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="694.0" prefWidth="882.0" style="-fx-background-color: #121214;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.Cinetec_cadastroController">
+    <stylesheets>
+        <URL value="@/br/com/fatec/styles/cinetec_cadastro.css" />
+    </stylesheets>
+   <children>
+      <ImageView fx:id="imgCadUsu" fitHeight="99.0" fitWidth="440.0" layoutX="240.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" styleClass="imgCad">
+         <image>
+            <Image url="@../../../../imagens/cad.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txt_nome" layoutX="240.0" layoutY="255.0" prefHeight="31.0" prefWidth="423.0" style="-fx-background-radius: 15px;" styleClass="placeholder" />
+      <TextField fx:id="txt_apelido" layoutX="240.0" layoutY="310.0" prefHeight="31.0" prefWidth="423.0" style="-fx-background-radius: 15px;" styleClass="placeholder" />
+      <TextField fx:id="txt_cpf" layoutX="243.0" layoutY="367.0" prefHeight="31.0" prefWidth="201.0" style="-fx-background-radius: 15px;" styleClass="placeholder" />
+      <TextField fx:id="txt_celular" layoutX="454.0" layoutY="367.0" prefHeight="31.0" prefWidth="208.0" style="-fx-background-radius: 15px;" styleClass="placeholder" />
+      <DatePicker id="data" fx:id="txt_bday" layoutX="245.0" layoutY="426.0" prefHeight="31.0" prefWidth="201.0" />
+      <ComboBox fx:id="cb_regiao" layoutX="455.0" layoutY="426.0" onAction="#options" prefHeight="31.0" prefWidth="208.0" promptText="Selecionar" style="-fx-background-radius: 15px;" />
+      <TextField fx:id="txt_email" layoutX="243.0" layoutY="485.0" prefHeight="31.0" prefWidth="423.0" style="-fx-background-radius: 15px;" styleClass="placeholder" />
+      <PasswordField fx:id="txt_senha" layoutX="246.0" layoutY="548.0" prefHeight="31.0" prefWidth="195.0" style="-fx-background-radius: 15px;" styleClass="placeholder" />
+      <PasswordField fx:id="txt_rsenha" layoutX="471.0" layoutY="548.0" prefHeight="31.0" prefWidth="187.0" style="-fx-background-radius: ;" styleClass="placeholder" />
+      <Button fx:id="btn_cadastro" layoutX="359.0" layoutY="612.0" mnemonicParsing="false" onAction="#btn_cadastro" prefHeight="31.0" prefWidth="168.0" styleClass="btn" text="CADASTRAR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="btnVoltar" layoutX="35.0" layoutY="32.0" mnemonicParsing="false" onAction="#btnVoltar" prefHeight="31.0" prefWidth="78.0" style="-fx-padding: 3;" styleClass="btn" text="🠔" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Label layoutX="246.0" layoutY="236.0" text="NOME" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="293.0" text="APELIDO" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="253.0" layoutY="530.0" text="SENHA" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="475.0" layoutY="530.0" text="REPETIR SENHA" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="251.0" layoutY="468.0" text="E-MAIL" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="247.0" layoutY="407.0" text="DATA DE NASCIMENTO" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="466.0" layoutY="408.0" text="REGIÃO" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="250.0" layoutY="349.0" text="CPF" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="461.0" layoutY="350.0" text="CELULAR" textFill="WHITE">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
