@@ -73,11 +73,27 @@ public class Cadastro_SalaController implements Initializable {
 
     @FXML
     private void atualizarSala(ActionEvent event) {
+        CadSala selectedSala = cbSelecionar.getValue();
+        if (selectedSala != null) {
+            CadSala novaSessao = moveViewParaModel();
+            limparCampos();
+            salas.set(salas.indexOf(selectedSala), novaSessao);
+            mensagem("Sala alterada com sucesso!");
+        } else {
+            mensagem("Selecione uma sala para alterar.");
+        }
     }
 
     @FXML
     private void DeletarSala(ActionEvent event) {
-        
+        CadSala selectedSala = cbSelecionar.getValue();
+        if (selectedSala != null) {
+            salas.remove(selectedSala);
+            limparCampos();
+            mensagem("Sala removida com sucesso!");
+        } else {
+            mensagem("Selecione uma sala para excluir.");
+        }
 
     }
 
@@ -110,6 +126,8 @@ public class Cadastro_SalaController implements Initializable {
         txt_audio.setText(sala.getAudio());
         txt_capacidade.setText(sala.getCapacidade());
         txt_computador.setText(sala.getComputador());
+        
+        cbSelecionar.getSelectionModel().select(sala);
     }
 
     private boolean todosCamposPreenchidos() {
