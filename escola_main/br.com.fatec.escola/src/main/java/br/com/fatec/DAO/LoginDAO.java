@@ -73,17 +73,17 @@ public class LoginDAO {
     
     public void selectNomeCelular(String email) throws SQLException {
         try (Connection conn = connect()) {
-            String SQL = "SELECT nome, celular FROM TBL_CADASTRO WHERE EMAIL = ?";
+            String SQL = "SELECT cpf FROM login WHERE cpf = ?";
             try (PreparedStatement pstmt = conn.prepareStatement(SQL)) {
                 pstmt.setString(1, email);
                 ResultSet rs = pstmt.executeQuery();
 
                 if (rs.next()) {
-                    String nome = rs.getString("nome");
-                    String celular = rs.getString("celular");
+                    String nome = rs.getString("cpf");
+                    String celular = rs.getString("cpf");
 
                     // Realiza a inserção na tabela TBL_LOG_ACESSOS
-                    insertIntoLogAcessos(conn, email, nome, celular);
+                    //insertIntoLogAcessos(conn, email, nome, celular);
                 }
             }
         }

@@ -13,7 +13,7 @@ import br.com.fatec.controller.Cinetec_cadastroController;
 
 /**
  *
- * @author Leonardo
+ * @author Caic
  */
 public class Database {
     private static final String url = "jdbc:postgresql://localhost:5432/postgres";

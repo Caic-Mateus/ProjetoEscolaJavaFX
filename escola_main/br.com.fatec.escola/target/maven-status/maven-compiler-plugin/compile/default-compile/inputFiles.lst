@@ -14,6 +14,7 @@ C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fa
 C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\model\CadSessao.java
 C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\model\Distribuidora.java
 C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\DAO\CadastrarDAO.java
+C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\controller\cadastroProfessorTela.java
 C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\controller\Cinetec_cadDistribuidoraController.java
 C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\database\Database.java
 C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\controller\cadastroTela.java
@@ -21,11 +22,14 @@ C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fa
 C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\Principal.java
 C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\controller\Cinetec_menuController.java
 C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\controller\cadFilmesTela.java
+C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\model\CadProfessor.java
 C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\model\Cadastrar.java
 C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\SendSmsBasic.java
 C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\DAO\CadFilmesDAO.java
 C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\controller\Cinetec_reservaController.java
 C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\controller\Cinetec_listaController.java
+C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\controller\Cadastro_ProfessorController.java
+C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\DAO\CadastroProfessorDAO.java
 C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\model\Home.java
 C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\controller\listaTela.java
 C:\Users\caicm\Downloads\escola_main\br.com.fatec.escola\src\main\java\br\com\fatec\controller\menuTela.java

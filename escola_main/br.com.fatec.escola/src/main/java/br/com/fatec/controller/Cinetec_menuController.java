@@ -26,12 +26,13 @@ public class Cinetec_menuController implements Initializable {
     private Button btnCadFilmes;
     @FXML
     private Button btnCadSessao;
-    @FXML
     private Button btnCadDis;
     @FXML
     private Button btnLista;
     @FXML
     private Hyperlink btnSair;
+    @FXML
+    private Button btnCadProf;
    
    
     /**
@@ -59,7 +60,6 @@ public class Cinetec_menuController implements Initializable {
     }
 
 
-    @FXML
     private void btnCadDis(ActionEvent event) throws IOException {
         distribuidoraTela dis = new distribuidoraTela();
         dis.start(new Stage());
@@ -81,6 +81,14 @@ public class Cinetec_menuController implements Initializable {
         loginTela log = new loginTela();
         log.start(new Stage());
         Stage stage = (Stage) btnSair.getScene().getWindow();
+        stage.close();
+    }
+
+    @FXML
+    private void btnCadProf(ActionEvent event) throws IOException {
+        cadastroProfessorTela tel = new cadastroProfessorTela();
+        tel.start(new Stage());
+        Stage stage = (Stage) btnCadDis.getScene().getWindow();
         stage.close();
     }
     
