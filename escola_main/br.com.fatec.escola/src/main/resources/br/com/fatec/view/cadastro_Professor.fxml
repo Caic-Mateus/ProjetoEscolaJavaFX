@@ -6,14 +6,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.com.fatec.controller.Cadastro_ProfessorController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.Cadastro_ProfessorController">
     <children>
-      <TextField fx:id="txt_nome" layoutX="107.0" layoutY="93.0" />
-      <Label layoutX="68.0" layoutY="93.0" prefHeight="25.0" prefWidth="39.0" text="Nome:" />
-      <Label layoutX="68.0" layoutY="138.0" prefHeight="25.0" prefWidth="39.0" text="Email:" />
-      <TextField fx:id="txt_email" layoutX="107.0" layoutY="138.0" />
-      <TextField fx:id="txt_cpf" layoutX="107.0" layoutY="188.0" />
-      <Label layoutX="81.0" layoutY="188.0" prefHeight="25.0" prefWidth="26.0" text="CPF:" />
+      <TextField fx:id="txt_nome" layoutX="114.0" layoutY="138.0" />
+      <Label layoutX="75.0" layoutY="138.0" prefHeight="25.0" prefWidth="39.0" text="Nome:" />
+      <Label layoutX="75.0" layoutY="183.0" prefHeight="25.0" prefWidth="39.0" text="Email:" />
+      <TextField fx:id="txt_email" layoutX="114.0" layoutY="183.0" />
+      <TextField fx:id="txt_cpf" layoutX="114.0" layoutY="93.0" />
+      <Label layoutX="88.0" layoutY="93.0" prefHeight="25.0" prefWidth="26.0" text="CPF:" />
       <Label layoutX="364.0" layoutY="93.0" prefHeight="25.0" prefWidth="39.0" text="Sexo:" />
       <TextField fx:id="txt_sexo" layoutX="403.0" layoutY="93.0" />
       <TextField fx:id="txt_rg" layoutX="403.0" layoutY="138.0" />
@@ -29,5 +29,7 @@
       <Button fx:id="btn_deletar" layoutX="455.0" layoutY="362.0" mnemonicParsing="false" onAction="#DeletarProfessor" prefHeight="25.0" prefWidth="115.0" text="Deletar" />
       <TextField fx:id="txt_conta" layoutX="505.0" layoutY="310.0" prefHeight="25.0" prefWidth="68.0" />
       <Label layoutX="453.0" layoutY="310.0" prefHeight="25.0" prefWidth="52.0" text="Conta" />
+      <Button mnemonicParsing="false" text="Button" />
+      <Button layoutX="271.0" layoutY="93.0" mnemonicParsing="false" onAction="#btn_buscar" text="Buscar" />
    </children>
 </AnchorPane>

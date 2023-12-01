@@ -17,6 +17,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 /**
@@ -139,7 +140,7 @@ public class Cadastro_ProfessorController implements Initializable {
                 txt_sexo.setText(String.valueOf(cadProfessor.getSexo()));
                 
             } else {
-                msg_alert("Produto não encontrado.");
+                msg_alert("Professor não encontrado.");
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -184,13 +185,23 @@ public class Cadastro_ProfessorController implements Initializable {
             txt_nome.requestFocus();
             return false;
         }
+        if (txt_cpf.getText().length() != 11) {
+            msg_alert("O campo CPF deve conter 11 digitos.");
+            txt_nome.requestFocus();
+            return false;
+        }
         if (txt_agencia.getText().length() != 14) {
-            msg_alert("O CNPJ deve ter 14 dígitos.");
+            msg_alert("Preencha o campo agência.");
             txt_agencia.requestFocus();
             return false;
         }
         if (txt_banco.getText().isEmpty()) {
-            msg_alert("Preencha o campo Responsável.");
+            msg_alert("Preencha o nome do banco.");
+            txt_banco.requestFocus();
+            return false;
+        }
+        if (txt_conta.getText().isEmpty()) {
+            msg_alert("Preencha o numero da conta.");
             txt_banco.requestFocus();
             return false;
         }
@@ -199,8 +210,18 @@ public class Cadastro_ProfessorController implements Initializable {
             txt_email.requestFocus();
             return false;
         }
-        if (txt_salario.getText().length() != 11) {
-            msg_alert("O número de celular deve ter 11 dígitos.");
+        if (txt_rg.getText().isEmpty()) {
+            msg_alert("Preencha o RG.");
+            txt_salario.requestFocus();
+            return false;
+        }
+        if (txt_sexo.getText().length() !=1) {
+            msg_alert("Preencha o sexo com M ou F.");
+            txt_salario.requestFocus();
+            return false;
+        }
+        if (txt_salario.getText().isEmpty()) {
+            msg_alert("Preencha o valor do salário.");
             txt_salario.requestFocus();
             return false;
         }
@@ -210,10 +231,44 @@ public class Cadastro_ProfessorController implements Initializable {
     
     @FXML
     private void atualizarProfessor(ActionEvent event) {
+        CadastroProfessorDAO ProfDAO = new CadastroProfessorDAO();
+         
+        cadProfessor = moveViewToModel();   
+        try {
+            if(ProfDAO.alterCadastro(cadProfessor)){
+                msg_info("Cadastro alterado com sucesso!");
+                limparCampos();
+            }
+        } catch (SQLException ex) {
+            System.out.println("Deu erro: " + 
+                    ex.getMessage());
+        }   
     }
 
     @FXML
     private void DeletarProfessor(ActionEvent event) {
+        CadastroProfessorDAO ProfDAO = new CadastroProfessorDAO();
+          
+       cadProfessor = moveViewToModel();
+        try {
+            if(ProfDAO.removeCadastro(cadProfessor)){
+                msg_info("Cadastro excluido.");
+                limparCampos();
+            }
+        } catch (SQLException ex) {
+            System.out.println("Deu erro: " + 
+                    ex.getMessage());
+        } 
+    }
+
+    @FXML
+    private void btn_buscar(ActionEvent event) {
+        String cpfSelecionado = txt_cpf.getText();
+        if (cpfSelecionado != null) {
+            moveModelToView(cpfSelecionado);
+        } else {
+            msg_alert("Selecione algum dado.");
+        }
     }
     
 }

@@ -70,19 +70,21 @@ public class CadastroProfessorDAO {
     }
     
  
-    public boolean alterCadastro(Distribuidora dado) throws SQLException {
+    public boolean alterCadastro(CadProfessor dado) throws SQLException {
         try (Connection conn = connect()) {
-            String SQL = "UPDATE TBL_CAD_DISTRIBUIDORA SET nome = ?, cnpj = ?, responsavel = ?, email = ?, celular = ?, whats = ? WHERE cnpj = ?"; 
+            String SQL = "UPDATE professor SET cpf = ?, nome = ?, sexo = ?, email = ?, rg = ?, salario = ?, banco = ?, agencia = ?, conta = ?"; 
             PreparedStatement pstmt = conn.prepareStatement(SQL, Statement.RETURN_GENERATED_KEYS);
 
             // associar os dados do objeto Distribuidora com o comando UPDATE
-            pstmt.setString(1, dado.getNome());
-            pstmt.setString(2, dado.getCnpj());
-            pstmt.setString(3, dado.getResponsavel());
+            pstmt.setString(1, dado.getCpf());
+            pstmt.setString(2, dado.getNome());
+            pstmt.setString(3, dado.getSexo());
             pstmt.setString(4, dado.getEmail());
-            pstmt.setString(5, dado.getCelular());
-            pstmt.setString(6, dado.getWhats());
-            pstmt.setString(7, dado.getCnpj());
+            pstmt.setString(5, dado.getRg());          
+            pstmt.setString(6, dado.getSalario());
+            pstmt.setString(7, dado.getBanco());
+            pstmt.setString(8, dado.getAgencia());
+            pstmt.setString(9, dado.getConta());
 
             int res = pstmt.executeUpdate(); 
 
@@ -93,12 +95,12 @@ public class CadastroProfessorDAO {
         } 
     }
     
-    public boolean removeCadastro(Distribuidora dado) throws SQLException {
+    public boolean removeCadastro(CadProfessor dado) throws SQLException {
         try (Connection conn = connect()) {
-            String SQL = "DELETE FROM TBL_CAD_DISTRIBUIDORA WHERE cnpj = ?"; 
+            String SQL = "DELETE FROM professor WHERE cpf = ?"; 
             PreparedStatement pstmt = conn.prepareStatement(SQL, Statement.RETURN_GENERATED_KEYS);
 
-            pstmt.setString(1, dado.getCnpj());
+            pstmt.setString(1, dado.getCpf());
 
             int res = pstmt.executeUpdate(); 
 
@@ -154,7 +156,7 @@ public class CadastroProfessorDAO {
         CadProfessor prof = null;
 
         try (Connection conn = connect()) {
-            String sqlQuery = "SELECT nome, agencia, banco, conta, cpf, email, rg, salario, sexo FROM professor WHERE nome = ?";
+            String sqlQuery = "SELECT nome, agencia, banco, conta, cpf, email, rg, salario, sexo FROM professor WHERE cpf = ?";
             PreparedStatement pstmt = conn.prepareStatement(sqlQuery);
             pstmt.setString(1, nome);
 
