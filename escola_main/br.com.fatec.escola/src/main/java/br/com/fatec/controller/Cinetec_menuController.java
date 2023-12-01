@@ -53,7 +53,7 @@ public class Cinetec_menuController implements Initializable {
 
     @FXML
     private void btnCadSessao(ActionEvent event) throws IOException {
-        sessaoTela cad = new sessaoTela();
+        salaTela cad = new salaTela();
         cad.start(new Stage());
         Stage stage = (Stage) btnCadSessao.getScene().getWindow();
         stage.close();

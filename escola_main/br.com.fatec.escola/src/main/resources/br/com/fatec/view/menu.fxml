@@ -9,36 +9,36 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="986.0" style="-fx-background-color: #121214;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.Cinetec_menuController">
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="986.0" style="-fx-background-color: #809ACD;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.Cinetec_menuController">
     <stylesheets>
         <URL value="@/br/com/fatec/styles/cinetec_menu.css" />
     </stylesheets>
    <children>
-      <ImageView fitHeight="356.0" fitWidth="892.0" layoutX="386.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../imagens/icon.png" />
-         </image>
-      </ImageView>
-      <Button fx:id="btnCadProf" layoutX="105.0" layoutY="279.0" mnemonicParsing="false" onAction="#btnCadProf" prefHeight="31.0" prefWidth="207.0" styleClass="btn" text="CADASTRO PROFESSOR" textFill="WHITE">
+      <Button fx:id="btnCadProf" layoutX="196.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnCadProf" prefHeight="93.0" prefWidth="278.0" styleClass="btn" text="CADASTRO PROFESSOR">
          <font>
             <Font name="System Bold" size="14.0" />
          </font></Button>
-      <Button fx:id="btnCadFilmes" layoutX="105.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnCadFilmes" prefHeight="31.0" prefWidth="207.0" styleClass="btn" text="CADASTRO FILMES" textFill="WHITE">
+      <Button fx:id="btnCadFilmes" layoutX="196.0" layoutY="399.0" mnemonicParsing="false" onAction="#btnCadFilmes" prefHeight="93.0" prefWidth="278.0" styleClass="btn" text="CADASTRO FILMES">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
-      <Button fx:id="btnLista" layoutX="105.0" layoutY="390.0" mnemonicParsing="false" onAction="#btnLista" prefHeight="31.0" prefWidth="207.0" styleClass="btn" text="LISTA DE FILMES" textFill="WHITE">
+      <Button fx:id="btnLista" layoutX="564.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnLista" prefHeight="93.0" prefWidth="278.0" styleClass="btn" text="LISTA DE FILMES">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
-      <Button fx:id="btnCadSessao" layoutX="105.0" layoutY="444.0" mnemonicParsing="false" onAction="#btnCadSessao" prefHeight="31.0" prefWidth="207.0" styleClass="btn" text="CADASTRO SESSÃO" textFill="WHITE">
+      <Button fx:id="btnCadSessao" layoutX="564.0" layoutY="399.0" mnemonicParsing="false" onAction="#btnCadSessao" prefHeight="93.0" prefWidth="278.0" styleClass="btn" text="CADASTRO SESSÃO">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
-      <Hyperlink fx:id="btnSair" layoutX="897.0" layoutY="34.0" onAction="#btnSair" styleClass="sair" text="SAIR" textFill="#ffdf2b">
+      <Hyperlink fx:id="btnSair" layoutX="897.0" layoutY="34.0" onAction="#btnSair" styleClass="sair" text="SAIR" textFill="#f83a00">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Hyperlink>
+      <Text fill="WHITE" layoutX="366.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Menu Principal" wrappingWidth="253.13671875">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

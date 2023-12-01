@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.Cadastro_SalaController">
+    <children>
+      <TextField fx:id="txt_computador" layoutX="114.0" layoutY="138.0" prefHeight="25.0" prefWidth="39.0" />
+      <Label layoutX="37.0" layoutY="138.0" prefHeight="25.0" prefWidth="77.0" text="Computador:" />
+      <TextField fx:id="txt_capacidade" layoutX="114.0" layoutY="93.0" />
+      <Label layoutX="46.0" layoutY="93.0" prefHeight="25.0" prefWidth="68.0" text="Capacidade:" />
+      <Button fx:id="btn_cadastrar" layoutX="124.0" layoutY="361.0" mnemonicParsing="false" onAction="#cadastrarSala" prefHeight="25.0" prefWidth="115.0" text="Cadastrar" />
+      <Button fx:id="btn_atualizar" layoutX="300.0" layoutY="361.0" mnemonicParsing="false" onAction="#atualizarSala" prefHeight="25.0" prefWidth="115.0" text="Atualizar" />
+      <Button fx:id="btn_deletar" layoutX="455.0" layoutY="362.0" mnemonicParsing="false" onAction="#DeletarSala" prefHeight="25.0" prefWidth="115.0" text="Deletar" />
+      <Button fx:id="btn_buscarSala" layoutX="519.0" layoutY="50.0" mnemonicParsing="false" onAction="#btn_buscar" text="Buscar" />
+      <Label layoutX="37.0" layoutY="171.0" prefHeight="25.0" prefWidth="77.0" text="Audio Visual:" />
+      <TextField fx:id="txt_audio" layoutX="114.0" layoutY="171.0" prefHeight="25.0" prefWidth="39.0" />
+      <TextField fx:id="txt_acessibilidade" layoutX="114.0" layoutY="210.0" prefHeight="25.0" prefWidth="39.0" />
+      <Label layoutX="27.0" layoutY="210.0" prefHeight="25.0" prefWidth="87.0" text="Acessibilidade:" />
+      <Label layoutX="403.0" layoutY="210.0" prefHeight="25.0" prefWidth="51.0" text="Andar:" />
+      <TextField fx:id="txt_andar" layoutX="451.0" layoutY="210.0" prefHeight="25.0" prefWidth="39.0" />
+      <Label layoutX="27.0" layoutY="56.0" prefHeight="25.0" prefWidth="87.0" text="Identificação:" />
+      <TextField fx:id="txt_identificacao" layoutX="114.0" layoutY="56.0" />
+      <ComboBox fx:id="cbSelecionar" layoutX="354.0" layoutY="50.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
