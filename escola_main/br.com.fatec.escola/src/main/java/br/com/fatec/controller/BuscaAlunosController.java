@@ -62,6 +62,8 @@ public class BuscaAlunosController implements Initializable {
     private Button btnVoltar;
     @FXML
     private Hyperlink btnSair;
+    @FXML
+    private TextField txtBuscaCpf;
 
     /**
      * Initializes the controller class.
@@ -91,7 +93,24 @@ public class BuscaAlunosController implements Initializable {
             e.printStackTrace();
             // Lida com exceções, se necessário
         }
-       
+       txtBuscaCpf.textProperty().addListener((observable, oldValue, newValue) -> {
+           try
+           {
+               ObservableList<CadAlunos> alunos;
+
+            if (newValue == null || newValue.isEmpty()) {
+                alunos = FXCollections.observableArrayList(AlunosDAO.lista("")); // Busca todos os alunos se o campo estiver vazio
+            } else {
+                alunos = FXCollections.observableArrayList(AlunosDAO.lista("cpf LIKE '%" + newValue + "%'")); // Busca alunos baseado no texto do campo
+            }
+
+            tbLista.setItems(alunos);
+           }
+           catch (SQLException ex) {
+            Logger.getLogger(Cinetec_listaController.class.getName()).log(Level.SEVERE, "Erro ao buscar filmes", ex);
+        }
+       });
+        
         txtBusca.textProperty().addListener((observable, oldValue, newValue) -> {
         try {
             ObservableList<CadAlunos> alunos;

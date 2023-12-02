@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
@@ -8,7 +9,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.BuscaAlunosController">
    <children>
-      <TextField fx:id="txtBusca" layoutX="49.0" layoutY="264.0" prefHeight="31.0" prefWidth="206.0" promptText="Buscar por nome do aluno" styleClass="placeholder" />
+      <TextField fx:id="txtBusca" layoutX="134.0" layoutY="212.0" prefHeight="31.0" prefWidth="206.0" promptText="Buscar por nome do aluno" styleClass="placeholder" />
       <TableView fx:id="tbLista" layoutX="6.0" layoutY="295.0" onSort="#tbLista" prefHeight="429.0" prefWidth="1029.0" styleClass="tabela">
         <columns>
           <TableColumn fx:id="colCpf" prefWidth="133.0" styleClass="col" text="CPF" />
@@ -28,5 +29,8 @@
       <Hyperlink fx:id="btnSair" layoutX="1005.0" layoutY="33.0" onAction="#btnSair" styleClass="sair" text="SAIR" textFill="#ffdf2b">
          
       </Hyperlink>
+      <Text layoutX="81.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" wrappingWidth="52.220703125" />
+      <Text layoutX="361.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cpf" wrappingWidth="52.220703125" />
+      <TextField fx:id="txtBuscaCpf" layoutX="414.0" layoutY="212.0" prefHeight="31.0" prefWidth="206.0" promptText="Buscar por cpf do aluno" styleClass="placeholder" />
    </children>
 </AnchorPane>
