@@ -29,9 +29,9 @@ public class cadastroProfessorTela extends Application{
        // Cinetec_cadastroController controler = fxmlLoader.getController();
         
         Scene scene = new Scene(root);
-        Image icon = new Image(getClass().getResourceAsStream("/imagens/icon.png"));
+        Image icon = new Image(getClass().getResourceAsStream("/imagens/Logo.png"));
         tela.getIcons().add(icon);
-        tela.setTitle("Escola - Cadastro De Professores");
+        tela.setTitle("Escola Livro Aberto - Cadastro De Professores");
         tela.setScene(scene);
         tela.show();        
 

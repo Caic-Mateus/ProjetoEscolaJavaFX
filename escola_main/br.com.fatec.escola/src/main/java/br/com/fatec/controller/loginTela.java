@@ -31,9 +31,9 @@ public class loginTela extends Application{
         Cinetec_loginController controler = fxmlLoader.getController();
         
         Scene scene = new Scene(root);
-        Image icon = new Image(getClass().getResourceAsStream("/imagens/icon.png"));
+        Image icon = new Image(getClass().getResourceAsStream("/imagens/Logo.png"));
         tela.getIcons().add(icon);
-        tela.setTitle("Cinetec - Login");
+        tela.setTitle("Escola Livro Aberto - Login");
         tela.setScene(scene);
         tela.show();        
 

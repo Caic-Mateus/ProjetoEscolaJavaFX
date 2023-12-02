@@ -24,9 +24,9 @@ public class Principal extends Application {
         stage.setScene(scene);
         //stage.setFullScreen(true);
         //stage.setResizable(false);
-       Image icon = new Image(getClass().getResourceAsStream("/imagens/icon.png"));
+       Image icon = new Image(getClass().getResourceAsStream("/imagens/Logo.png"));
        stage.getIcons().add(icon);
-       stage.setTitle("Cinetec - Login");
+       stage.setTitle("Escola Livro Aberto - Login");
   
        stage.show();
     }

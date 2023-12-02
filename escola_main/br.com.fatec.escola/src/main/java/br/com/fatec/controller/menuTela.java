@@ -29,9 +29,9 @@ public class menuTela extends Application{
         Parent root = fxmlLoader.load();
         
         Scene scene = new Scene(root);
-        Image icon = new Image(getClass().getResourceAsStream("/imagens/icon.png"));
+        Image icon = new Image(getClass().getResourceAsStream("/imagens/Logo.png"));
         tela.getIcons().add(icon);
-        tela.setTitle("Cinetec - Menu");
+        tela.setTitle("Escola Livro Aberto - Menu");
         tela.setScene(scene);
         tela.show();        
 

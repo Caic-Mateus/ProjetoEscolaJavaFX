@@ -30,9 +30,9 @@ public class listaTela extends Application{
        // Cinetec_cadastroController controler = fxmlLoader.getController();
         
         Scene scene = new Scene(root);
-        Image icon = new Image(getClass().getResourceAsStream("/imagens/icon.png"));
+        Image icon = new Image(getClass().getResourceAsStream("/imagens/Logo.png"));
         tela.getIcons().add(icon);
-        tela.setTitle("Escola - Lista de Alunos");
+        tela.setTitle("Escola Livro Aberto - Lista de Alunos");
         tela.setScene(scene);
         tela.show();        
 
