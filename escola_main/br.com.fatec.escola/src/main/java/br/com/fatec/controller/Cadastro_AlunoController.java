@@ -94,10 +94,34 @@ public class Cadastro_AlunoController implements Initializable {
     }
     @FXML
     private void btn_atualizar(ActionEvent event) {
+        CadAlunosDAO AlunosDAO = new CadAlunosDAO();
+         
+        cadAlunos = moveViewToModel();   
+        try {
+            if(AlunosDAO.alterCadastro(cadAlunos)){
+                msg_info("Cadastro alterado com sucesso!");
+                limparCampos();
+            }
+        } catch (SQLException ex) {
+            System.out.println("Deu erro: " + 
+                    ex.getMessage());
+        }  
     }
 
     @FXML
     private void btn_deletar(ActionEvent event) {
+        CadAlunosDAO AlunosDAO = new CadAlunosDAO();
+         
+        cadAlunos = moveViewToModel();   
+        try {
+            if(AlunosDAO.removeCadastro(cadAlunos)){
+                msg_info("Cadastro excluido.");
+                limparCampos();
+            }
+        } catch (SQLException ex) {
+            System.out.println("Deu erro: " + 
+                    ex.getMessage());
+        } 
     }
     private CadAlunos moveViewToModel(){ //leva da tela para o back
         //CRIA O OBJETO CADASTRO - (MODEL)
