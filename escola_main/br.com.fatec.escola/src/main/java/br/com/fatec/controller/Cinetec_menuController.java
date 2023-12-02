@@ -23,7 +23,6 @@ import javafx.stage.Stage;
 public class Cinetec_menuController implements Initializable {
 
     private Button btnCadFilmes;
-    @FXML
     private Button btnCadSessao;
     private Button btnCadDis;
     @FXML
@@ -34,6 +33,8 @@ public class Cinetec_menuController implements Initializable {
     private Button btnCadProf;
     @FXML
     private Button btnCadAlunos;
+    @FXML
+    private Button btnCadSala;
    
    
     /**
@@ -51,7 +52,6 @@ public class Cinetec_menuController implements Initializable {
         stage.close();
     }
 
-    @FXML
     private void btnCadSessao(ActionEvent event) throws IOException {
         salaTela cad = new salaTela();
         cad.start(new Stage());
@@ -97,6 +97,14 @@ public class Cinetec_menuController implements Initializable {
         cadastroAlunoTela tel = new cadastroAlunoTela();
         tel.start(new Stage());
         Stage stage = (Stage) btnCadDis.getScene().getWindow();
+        stage.close();
+    }
+
+    @FXML
+    private void btnCadSala(ActionEvent event) throws IOException {
+        salaTela cad = new salaTela();
+        cad.start(new Stage());
+        Stage stage = (Stage) btnCadSala.getScene().getWindow();
         stage.close();
     }
     

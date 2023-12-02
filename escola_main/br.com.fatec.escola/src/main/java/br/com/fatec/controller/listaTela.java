@@ -25,14 +25,14 @@ public class listaTela extends Application{
     public void start(Stage tela) throws IOException {
         setStage(tela);
         
-        FXMLLoader fxmlLoader = new FXMLLoader(Principal.class.getResource("view/Cinetec_lista.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Principal.class.getResource("view/buscaAlunos.fxml"));
         Parent root = fxmlLoader.load();
        // Cinetec_cadastroController controler = fxmlLoader.getController();
         
         Scene scene = new Scene(root);
         Image icon = new Image(getClass().getResourceAsStream("/imagens/icon.png"));
         tela.getIcons().add(icon);
-        tela.setTitle("Cinetec - Lista de Filmes");
+        tela.setTitle("Escola - Lista de Alunos");
         tela.setScene(scene);
         tela.show();        
 

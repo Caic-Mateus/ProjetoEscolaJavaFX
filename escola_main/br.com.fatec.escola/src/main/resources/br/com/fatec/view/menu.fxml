@@ -22,11 +22,11 @@
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
-      <Button fx:id="btnLista" layoutX="564.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnLista" prefHeight="93.0" prefWidth="278.0" styleClass="btn" text="LISTA DE FILMES">
+      <Button fx:id="btnLista" layoutX="564.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnLista" prefHeight="93.0" prefWidth="278.0" styleClass="btn" text="LISTA DE ALUNOS">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
-      <Button fx:id="btnCadSessao" layoutX="564.0" layoutY="399.0" mnemonicParsing="false" onAction="#btnCadSessao" prefHeight="93.0" prefWidth="278.0" styleClass="btn" text="CADASTRO SESSÃO">
+      <Button fx:id="btnCadSala" layoutX="564.0" layoutY="399.0" mnemonicParsing="false" onAction="#btnCadSala" prefHeight="93.0" prefWidth="278.0" styleClass="btn" text="CADASTRO SALA">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>

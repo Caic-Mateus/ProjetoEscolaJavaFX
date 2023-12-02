@@ -6,11 +6,14 @@ package br.com.fatec.DAO;
 
 import static br.com.fatec.database.Database.connect;
 import br.com.fatec.model.CadAlunos;
+import br.com.fatec.model.CadFilmes;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Collection;
 import javafx.scene.control.ComboBox;
 
 /**
@@ -118,6 +121,42 @@ public class CadAlunosDAO {
             return res != 0;
         } 
     }
+     public Collection<CadAlunos> lista(String criterio) throws SQLException {
+        ArrayList<CadAlunos> lista = new ArrayList<>();
+        String sql = "SELECT * FROM aluno ";
+
+        if (criterio != null && criterio.length() > 0) {
+            sql += " WHERE " + criterio;
+        }
+
+        try (Connection conn = connect()) {
+            try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+                try (ResultSet rs = pstmt.executeQuery()) {
+                    while (rs.next()) {
+                        CadAlunos alunos = new CadAlunos();
+                        alunos.setCpf(rs.getString("cpf"));
+                        alunos.setNome(rs.getString("nome"));
+                        alunos.setSexo(rs.getString("sexo"));
+                        alunos.setResponsavel(rs.getString("responsavel"));
+                        alunos.setEmail(rs.getString("email"));
+                        alunos.setRg(rs.getString("rg"));
+                        alunos.setIdentificacao(rs.getString("identificacao"));
+                        alunos.setPeriodo(rs.getString("periodo"));
+                        alunos.setRa(rs.getString("ra"));
+
+
+                        lista.add(alunos);
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            // Lidar com exceções, se necessário
+        }
+
+        return lista;
+    }
+    
     public void preencherComboBoxClasse(ComboBox<String> cb_Classe) {
         try (Connection conn = connect()) {
             // Sua consulta SQL para selecionar os nomes
