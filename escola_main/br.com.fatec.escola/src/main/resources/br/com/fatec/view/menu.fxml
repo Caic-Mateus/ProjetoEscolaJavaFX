@@ -14,19 +14,19 @@
         <URL value="@/br/com/fatec/styles/cinetec_menu.css" />
     </stylesheets>
    <children>
-      <Button fx:id="btnCadProf" layoutX="196.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnCadProf" prefHeight="93.0" prefWidth="278.0" styleClass="btn" text="CADASTRO PROFESSOR">
+      <Button fx:id="btnCadProf" layoutX="196.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnCadProf" prefHeight="93.0" prefWidth="278.0" style="-fx-background-color: white;" text="CADASTRO PROFESSOR">
          <font>
             <Font name="System Bold" size="14.0" />
          </font></Button>
-      <Button fx:id="btnCadAlunos" layoutX="196.0" layoutY="399.0" mnemonicParsing="false" onAction="#btnCadAlunos" prefHeight="93.0" prefWidth="278.0" styleClass="btn" text="CADASTRO ALUNOS">
+      <Button fx:id="btnCadAlunos" layoutX="196.0" layoutY="399.0" mnemonicParsing="false" onAction="#btnCadAlunos" prefHeight="93.0" prefWidth="278.0" style="-fx-background-color: white;" text="CADASTRO ALUNOS">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
-      <Button fx:id="btnLista" layoutX="564.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnLista" prefHeight="93.0" prefWidth="278.0" styleClass="btn" text="LISTA DE ALUNOS">
+      <Button fx:id="btnLista" layoutX="564.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnLista" prefHeight="93.0" prefWidth="278.0" style="-fx-background-color: white;" text="LISTA DE ALUNOS">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
-      <Button fx:id="btnCadSala" layoutX="564.0" layoutY="399.0" mnemonicParsing="false" onAction="#btnCadSala" prefHeight="93.0" prefWidth="278.0" styleClass="btn" text="CADASTRO SALA">
+      <Button fx:id="btnCadSala" layoutX="564.0" layoutY="399.0" mnemonicParsing="false" onAction="#btnCadSala" prefHeight="93.0" prefWidth="278.0" style="-fx-background-color: white;" text="CADASTRO SALA">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
@@ -40,5 +40,10 @@
             <Font size="36.0" />
          </font>
       </Text>
+      <ImageView fitHeight="119.0" fitWidth="161.0" layoutX="28.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../imagens/Logo.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

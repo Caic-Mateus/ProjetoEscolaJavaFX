@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,29 +8,75 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.Cadastro_AlunoController">
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="986.0" style="-fx-background-color: #809ACD;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.Cadastro_AlunoController">
    <children>
-      <TextField fx:id="txt_cpf" layoutX="107.0" layoutY="58.0" />
-      <Text layoutX="84.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF:" />
-      <Text layoutX="66.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" />
-      <Text layoutX="70.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexo:" />
-      <Text layoutX="34.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Responsavel:" wrappingWidth="72.150390625" />
-      <Text layoutX="39.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="email:" wrappingWidth="72.150390625" />
-      <Text layoutX="326.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="rg:" wrappingWidth="72.150390625" />
-      <Text layoutX="326.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ra:" wrappingWidth="72.150390625" />
-      <Text layoutX="326.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="periodo:" wrappingWidth="72.150390625" />
-      <ComboBox fx:id="cb_Classe" layoutX="403.0" layoutY="188.0" prefWidth="150.0" />
-      <Text layoutX="326.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classe:" wrappingWidth="72.150390625" />
-      <TextField fx:id="txt_nome" layoutX="107.0" layoutY="89.0" />
-      <TextField fx:id="txt_responsavel" layoutX="107.0" layoutY="152.0" />
-      <TextField fx:id="txt_sexo" layoutX="107.0" layoutY="119.0" prefHeight="25.0" prefWidth="72.0" />
-      <TextField fx:id="txt_email" layoutX="105.0" layoutY="187.0" />
-      <TextField fx:id="txt_rg" layoutX="404.0" layoutY="69.0" />
-      <TextField fx:id="txt_periodo" layoutX="404.0" layoutY="106.0" />
-      <TextField fx:id="txt_ra" layoutX="404.0" layoutY="144.0" />
-      <Button fx:id="btn_cadastrar" layoutX="109.0" layoutY="283.0" mnemonicParsing="false" onAction="#btn_cadastrar" prefHeight="25.0" prefWidth="126.0" text="Cadastrar" />
-      <Button fx:id="btn_atualizar" layoutX="254.0" layoutY="283.0" mnemonicParsing="false" onAction="#btn_atualizar" prefHeight="25.0" prefWidth="126.0" text="Atualizar" />
-      <Button fx:id="btn_deletar" layoutX="404.0" layoutY="283.0" mnemonicParsing="false" onAction="#btn_deletar" prefHeight="25.0" prefWidth="126.0" text="Deletar" />
-      <Button fx:id="btn_Buscar" layoutX="265.0" layoutY="58.0" mnemonicParsing="false" onAction="#btn_Buscar" text="Buscar" />
+      <TextField fx:id="txt_cpf" layoutX="183.0" layoutY="156.0" prefHeight="35.0" prefWidth="185.0" />
+      <Text layoutX="142.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF:">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="127.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="142.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexo:">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="83.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Responsavel:" wrappingWidth="105.150390625">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="634.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" wrappingWidth="51.0">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="647.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RG:" wrappingWidth="33.9169921875">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="651.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RA:" wrappingWidth="33.9169921875">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="613.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Periodo:" wrappingWidth="72.150390625">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <ComboBox fx:id="cb_Classe" layoutX="446.0" layoutY="435.0" prefHeight="35.0" prefWidth="185.0" />
+      <Text layoutX="385.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classe:" wrappingWidth="72.150390625">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <TextField fx:id="txt_nome" layoutX="185.0" layoutY="220.0" prefHeight="35.0" prefWidth="185.0" />
+      <TextField fx:id="txt_responsavel" layoutX="185.0" layoutY="344.0" prefHeight="35.0" prefWidth="185.0" />
+      <TextField fx:id="txt_sexo" layoutX="188.0" layoutY="287.0" prefHeight="35.0" prefWidth="53.0" />
+      <TextField fx:id="txt_email" layoutX="683.0" layoutY="342.0" prefHeight="35.0" prefWidth="185.0" />
+      <TextField fx:id="txt_rg" layoutX="683.0" layoutY="152.0" prefHeight="35.0" prefWidth="185.0" />
+      <TextField fx:id="txt_periodo" layoutX="685.0" layoutY="219.0" prefHeight="35.0" prefWidth="185.0" />
+      <TextField fx:id="txt_ra" layoutX="683.0" layoutY="282.0" prefHeight="35.0" prefWidth="185.0" />
+      <Button fx:id="btn_cadastrar" layoutX="198.0" layoutY="557.0" mnemonicParsing="false" onAction="#btn_cadastrar" prefHeight="57.0" prefWidth="169.0" style="-fx-background-color: white;" text="CADASTRAR">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="btn_atualizar" layoutX="455.0" layoutY="557.0" mnemonicParsing="false" onAction="#btn_atualizar" prefHeight="57.0" prefWidth="157.0" style="-fx-background-color: white;" text="ATUALIZAR">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="btn_deletar" layoutX="692.0" layoutY="557.0" mnemonicParsing="false" onAction="#btn_deletar" prefHeight="57.0" prefWidth="157.0" style="-fx-background-color: white;" text="DELETAR">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="btn_Buscar" layoutX="389.0" layoutY="156.0" mnemonicParsing="false" onAction="#btn_Buscar" prefHeight="35.0" prefWidth="65.0" style="-fx-background-color: WHITE;" text="BUSCAR" />
+      <ImageView fitHeight="121.0" fitWidth="113.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../imagens/Logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnVoltar" layoutX="831.0" layoutY="24.0" mnemonicParsing="false" onAction="#btnVoltar" prefHeight="42.0" prefWidth="104.0" style="-fx-background-color: WHITE;" text="VOLTAR">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

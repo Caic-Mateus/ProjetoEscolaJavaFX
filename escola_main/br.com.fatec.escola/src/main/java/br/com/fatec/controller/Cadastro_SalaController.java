@@ -45,12 +45,12 @@ public class Cadastro_SalaController implements Initializable {
     @FXML
     private TextField txt_andar;
     
+    @FXML
+    private ComboBox<CadSala> cbSelecionar;
     private ObservableList<CadSala> salas = FXCollections.observableArrayList();
     
     @FXML
     private TextField txt_identificacao;
-    @FXML
-    private ComboBox<CadSala> cbSelecionar;
     /**
      * Initializes the controller class.
      */

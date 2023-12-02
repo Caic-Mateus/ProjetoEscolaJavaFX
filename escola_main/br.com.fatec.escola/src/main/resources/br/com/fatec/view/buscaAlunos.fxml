@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.BuscaAlunosController">
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.BuscaAlunosController">
    <children>
       <TextField fx:id="txtBusca" layoutX="134.0" layoutY="212.0" prefHeight="31.0" prefWidth="206.0" promptText="Buscar por nome do aluno" styleClass="placeholder" />
       <TableView fx:id="tbLista" layoutX="6.0" layoutY="295.0" onSort="#tbLista" prefHeight="429.0" prefWidth="1029.0" styleClass="tabela">

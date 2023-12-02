@@ -6,6 +6,7 @@ package br.com.fatec.controller;
 
 import br.com.fatec.DAO.CadAlunosDAO;
 import br.com.fatec.model.CadAlunos;
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
@@ -53,6 +54,8 @@ public class Cadastro_AlunoController implements Initializable {
     private CadAlunos cadAlunos = new CadAlunos();
     @FXML
     private Button btn_Buscar;
+    @FXML
+    private Button btnVoltar;
     /**
      * Initializes the controller class.
      */
@@ -209,7 +212,15 @@ public class Cadastro_AlunoController implements Initializable {
     
     private void limparCampos() {
         txt_nome.clear();
-        
+        txt_cpf.clear();
+        txt_sexo.clear();
+        txt_responsavel.clear();
+        txt_email.clear();
+        txt_rg.clear();
+        txt_periodo.clear();
+        txt_ra.clear();
+
+
     }
 
     @FXML
@@ -220,5 +231,13 @@ public class Cadastro_AlunoController implements Initializable {
         } else {
             msg_alert("Selecione algum dado.");
         }
+    }
+
+    @FXML
+    private void btnVoltar(ActionEvent event) throws IOException {
+        menuTela home = new menuTela();
+        home.start(new Stage());
+        Stage stage = (Stage) btnVoltar.getScene().getWindow();
+        stage.close();
     }
 }

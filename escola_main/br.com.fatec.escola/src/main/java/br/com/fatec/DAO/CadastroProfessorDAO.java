@@ -152,13 +152,13 @@ public class CadastroProfessorDAO {
         }
     }
     
-    public CadProfessor buscarProfessor(String nome) throws SQLException {
+    public CadProfessor buscarProfessor(String cpf) throws SQLException {
         CadProfessor prof = null;
 
         try (Connection conn = connect()) {
             String sqlQuery = "SELECT nome, agencia, banco, conta, cpf, email, rg, salario, sexo FROM professor WHERE cpf = ?";
             PreparedStatement pstmt = conn.prepareStatement(sqlQuery);
-            pstmt.setString(1, nome);
+            pstmt.setString(1, cpf);
 
             ResultSet rs = pstmt.executeQuery();
 

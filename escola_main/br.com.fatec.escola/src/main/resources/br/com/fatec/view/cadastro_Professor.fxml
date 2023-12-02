@@ -1,35 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.Cadastro_ProfessorController">
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="986.0" style="-fx-background-color: #809ACD;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.Cadastro_ProfessorController">
     <children>
-      <TextField fx:id="txt_nome" layoutX="114.0" layoutY="138.0" />
-      <Label layoutX="75.0" layoutY="138.0" prefHeight="25.0" prefWidth="39.0" text="Nome:" />
-      <Label layoutX="75.0" layoutY="183.0" prefHeight="25.0" prefWidth="39.0" text="Email:" />
-      <TextField fx:id="txt_email" layoutX="114.0" layoutY="183.0" />
-      <TextField fx:id="txt_cpf" layoutX="114.0" layoutY="93.0" />
-      <Label layoutX="88.0" layoutY="93.0" prefHeight="25.0" prefWidth="26.0" text="CPF:" />
-      <Label layoutX="364.0" layoutY="93.0" prefHeight="25.0" prefWidth="39.0" text="Sexo:" />
-      <TextField fx:id="txt_sexo" layoutX="403.0" layoutY="93.0" />
-      <TextField fx:id="txt_rg" layoutX="403.0" layoutY="138.0" />
-      <Label layoutX="364.0" layoutY="138.0" prefHeight="25.0" prefWidth="39.0" text="RG:" />
-      <Label layoutX="68.0" layoutY="277.0" prefHeight="25.0" prefWidth="39.0" text="Salario" />
-      <TextField fx:id="txt_salario" layoutX="107.0" layoutY="277.0" />
-      <TextField fx:id="txt_banco" layoutX="107.0" layoutY="310.0" />
-      <Label layoutX="68.0" layoutY="310.0" prefHeight="25.0" prefWidth="39.0" text="Banco" />
-      <Label layoutX="296.0" layoutY="310.0" prefHeight="25.0" prefWidth="52.0" text="Agencia" />
-      <TextField fx:id="txt_agencia" layoutX="348.0" layoutY="310.0" prefHeight="25.0" prefWidth="68.0" />
-      <Button fx:id="btn_cadastrar" layoutX="124.0" layoutY="361.0" mnemonicParsing="false" onAction="#cadastrarProfessor" prefHeight="25.0" prefWidth="115.0" text="Cadastrar" />
-      <Button fx:id="btn_atualizar" layoutX="300.0" layoutY="361.0" mnemonicParsing="false" onAction="#atualizarProfessor" prefHeight="25.0" prefWidth="115.0" text="Atualizar" />
-      <Button fx:id="btn_deletar" layoutX="455.0" layoutY="362.0" mnemonicParsing="false" onAction="#DeletarProfessor" prefHeight="25.0" prefWidth="115.0" text="Deletar" />
-      <TextField fx:id="txt_conta" layoutX="505.0" layoutY="310.0" prefHeight="25.0" prefWidth="68.0" />
-      <Label layoutX="453.0" layoutY="310.0" prefHeight="25.0" prefWidth="52.0" text="Conta" />
-      <Button mnemonicParsing="false" text="Button" />
-      <Button layoutX="271.0" layoutY="93.0" mnemonicParsing="false" onAction="#btn_buscar" text="Buscar" />
+      <TextField fx:id="txt_nome" layoutX="140.0" layoutY="251.0" prefHeight="31.0" prefWidth="166.0" />
+      <Label layoutX="70.0" layoutY="204.0" prefHeight="27.0" prefWidth="68.0" text="Nome:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="77.0" layoutY="253.0" prefHeight="27.0" prefWidth="61.0" text="Email:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="txt_email" layoutX="138.0" layoutY="205.0" prefHeight="31.0" prefWidth="166.0" />
+      <TextField fx:id="txt_cpf" layoutX="138.0" layoutY="157.0" prefHeight="31.0" prefWidth="166.0" />
+      <Label layoutX="90.0" layoutY="157.0" prefHeight="35.0" prefWidth="39.0" text="CPF:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="652.0" layoutY="208.0" prefHeight="27.0" prefWidth="52.0" text="Sexo:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="txt_sexo" layoutX="704.0" layoutY="205.0" prefHeight="31.0" prefWidth="33.0" />
+      <TextField fx:id="txt_rg" layoutX="704.0" layoutY="250.0" prefHeight="31.0" prefWidth="200.0" />
+      <Label layoutX="665.0" layoutY="253.0" prefHeight="25.0" prefWidth="39.0" text="RG:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="68.0" layoutY="379.0" prefHeight="27.0" prefWidth="61.0" text="Salario:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="txt_salario" layoutX="129.0" layoutY="376.0" prefHeight="31.0" prefWidth="166.0" />
+      <TextField fx:id="txt_banco" layoutX="129.0" layoutY="428.0" prefHeight="31.0" prefWidth="166.0" />
+      <Label layoutX="68.0" layoutY="431.0" prefHeight="27.0" prefWidth="61.0" text="Banco:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label layoutX="353.0" layoutY="430.0" prefHeight="27.0" prefWidth="81.0" text="Agencia:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="txt_agencia" layoutX="434.0" layoutY="428.0" prefHeight="31.0" prefWidth="166.0" />
+      <Button fx:id="btn_cadastrar" layoutX="140.0" layoutY="545.0" mnemonicParsing="false" onAction="#cadastrarProfessor" prefHeight="52.0" prefWidth="145.0" style="-fx-background-color: white;" text="Cadastrar">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="btn_atualizar" layoutX="434.0" layoutY="545.0" mnemonicParsing="false" onAction="#atualizarProfessor" prefHeight="52.0" prefWidth="145.0" style="-fx-background-color: white;" text="Atualizar">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="btn_deletar" layoutX="705.0" layoutY="545.0" mnemonicParsing="false" onAction="#DeletarProfessor" prefHeight="52.0" prefWidth="145.0" style="-fx-background-color: white;" text="Deletar">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+      <TextField fx:id="txt_conta" layoutX="738.0" layoutY="428.0" prefHeight="31.0" prefWidth="166.0" />
+      <Label layoutX="679.0" layoutY="430.0" prefHeight="25.0" prefWidth="52.0" text="Conta:">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button layoutX="319.0" layoutY="157.0" mnemonicParsing="false" onAction="#btn_buscar" prefHeight="31.0" prefWidth="68.0" text="Buscar" />
+      <ImageView fitHeight="84.0" fitWidth="126.0" layoutX="25.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../imagens/Logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnVoltar" layoutX="821.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnVoltar" prefHeight="42.0" prefWidth="104.0" style="-fx-background-color: WHITE;" text="VOLTAR">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

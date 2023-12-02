@@ -7,6 +7,7 @@ package br.com.fatec.controller;
 import br.com.fatec.DAO.CadastroProfessorDAO;
 import br.com.fatec.DAO.DistribuidoraDAO;
 import br.com.fatec.model.CadProfessor;
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
@@ -53,6 +54,8 @@ public class Cadastro_ProfessorController implements Initializable {
     private TextField txt_conta;
 
     private CadProfessor cadProfessor = new CadProfessor();
+    @FXML
+    private Button btnVoltar;
     /**
      * Initializes the controller class.
      */
@@ -185,16 +188,7 @@ public class Cadastro_ProfessorController implements Initializable {
             txt_nome.requestFocus();
             return false;
         }
-        if (txt_cpf.getText().length() != 11) {
-            msg_alert("O campo CPF deve conter 11 digitos.");
-            txt_nome.requestFocus();
-            return false;
-        }
-        if (txt_agencia.getText().length() != 14) {
-            msg_alert("Preencha o campo agência.");
-            txt_agencia.requestFocus();
-            return false;
-        }
+        
         if (txt_banco.getText().isEmpty()) {
             msg_alert("Preencha o nome do banco.");
             txt_banco.requestFocus();
@@ -269,6 +263,14 @@ public class Cadastro_ProfessorController implements Initializable {
         } else {
             msg_alert("Selecione algum dado.");
         }
+    }
+
+    @FXML
+    private void btnVoltar(ActionEvent event) throws IOException {
+        menuTela home = new menuTela();
+        home.start(new Stage());
+        Stage stage = (Stage) btnVoltar.getScene().getWindow();
+        stage.close();
     }
     
 }

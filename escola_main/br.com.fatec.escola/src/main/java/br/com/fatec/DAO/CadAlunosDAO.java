@@ -85,7 +85,7 @@ public class CadAlunosDAO {
     }
     public boolean alterCadastro(CadAlunos dado) throws SQLException {
         try (Connection conn = connect()) {
-            String SQL = "UPDATE aluno SET cpf = ?, nome = ?,sexo = ?, responsavel = ?, email = ?, rg = ?, identificacao = ?, periodo = ?, ra = ?"; 
+            String SQL = "UPDATE aluno SET cpf = ?, nome = ?,sexo = ?, responsavel = ?, email = ?, rg = ?, identificacao = ?, periodo = ?, ra = ? where cpf = ?"; 
             PreparedStatement pstmt = conn.prepareStatement(SQL, Statement.RETURN_GENERATED_KEYS);
 
             // associar os dados do objeto Distribuidora com o comando UPDATE
@@ -98,7 +98,7 @@ public class CadAlunosDAO {
             pstmt.setString(7, dado.getIdentificacao());
             pstmt.setString(8, dado.getPeriodo());
             pstmt.setString(9, dado.getRa());
-
+            pstmt.setString(10, dado.getCpf());
             int res = pstmt.executeUpdate(); 
 
             conn.close();
