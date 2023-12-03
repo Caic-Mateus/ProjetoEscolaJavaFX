@@ -6,7 +6,6 @@ package br.com.fatec.DAO;
 
 import static br.com.fatec.database.Database.connect;
 import br.com.fatec.model.CadAlunos;
-import br.com.fatec.model.CadFilmes;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

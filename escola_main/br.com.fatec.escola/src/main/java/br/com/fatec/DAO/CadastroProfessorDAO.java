@@ -6,7 +6,6 @@ package br.com.fatec.DAO;
 
 import static br.com.fatec.database.Database.connect;
 import br.com.fatec.model.CadProfessor;
-import br.com.fatec.model.Distribuidora;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
