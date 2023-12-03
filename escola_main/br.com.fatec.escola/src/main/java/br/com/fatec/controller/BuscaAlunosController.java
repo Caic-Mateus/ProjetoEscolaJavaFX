@@ -6,6 +6,7 @@ package br.com.fatec.controller;
 
 import br.com.fatec.DAO.CadAlunosDAO;
 import br.com.fatec.model.CadAlunos;
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.Collection;
@@ -28,6 +29,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -60,8 +62,6 @@ public class BuscaAlunosController implements Initializable {
     private TableColumn<?, ?> colRa;
     @FXML
     private Button btnVoltar;
-    @FXML
-    private Hyperlink btnSair;
     @FXML
     private TextField txtBuscaCpf;
 
@@ -151,11 +151,12 @@ public class BuscaAlunosController implements Initializable {
     }
 
     @FXML
-    private void btnVoltar(ActionEvent event) {
+    private void btnVoltar(ActionEvent event) throws IOException {
+        menuTela home = new menuTela();
+        home.start(new Stage());
+        Stage stage = (Stage) btnVoltar.getScene().getWindow();
+        stage.close();
     }
 
-    @FXML
-    private void btnSair(ActionEvent event) {
-    }
     
 }

@@ -5,6 +5,7 @@
 package br.com.fatec.controller;
 
 import br.com.fatec.model.CadSala;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.collections.FXCollections;
@@ -51,6 +52,8 @@ public class Cadastro_SalaController implements Initializable {
     
     @FXML
     private TextField txt_identificacao;
+    @FXML
+    private Button btnVoltar;
     /**
      * Initializes the controller class.
      */
@@ -161,6 +164,14 @@ public class Cadastro_SalaController implements Initializable {
         stage.getIcons().add(new Image(this.getClass().getResource("/imagens/icon.png").toString()));
                 
         alerta.showAndWait(); // exibe mensagem
+    }
+
+    @FXML
+    private void btnVoltar(ActionEvent event) throws IOException {
+        menuTela home = new menuTela();
+        home.start(new Stage());
+        Stage stage = (Stage) btnVoltar.getScene().getWindow();
+        stage.close();
     }
 
     

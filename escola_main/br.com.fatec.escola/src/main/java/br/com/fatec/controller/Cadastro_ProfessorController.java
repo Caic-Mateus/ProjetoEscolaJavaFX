@@ -11,6 +11,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -73,10 +75,10 @@ public class Cadastro_ProfessorController implements Initializable {
         }
         
         // Verifica se o e-mail é válido
-//        if (!isValidEmail(txt_email.getText())) {
-//            msg_alert("O e-mail informado não é válido.");
-//            return;  // Interrompe a execução do método
-//        };;
+        if (!isValidEmail(txt_email.getText())) {
+            msg_alert("O e-mail informado não é válido.");
+            return;  // Interrompe a execução do método
+        };;
         
         
         //VERIFICANDO      
@@ -188,7 +190,11 @@ public class Cadastro_ProfessorController implements Initializable {
             txt_nome.requestFocus();
             return false;
         }
-        
+        if (txt_cpf.getText().length() != 11) {
+            msg_alert("CPF deve ter 11 digitos.");
+            txt_cpf.requestFocus();
+            return false;
+        }
         if (txt_banco.getText().isEmpty()) {
             msg_alert("Preencha o nome do banco.");
             txt_banco.requestFocus();
@@ -272,5 +278,10 @@ public class Cadastro_ProfessorController implements Initializable {
         Stage stage = (Stage) btnVoltar.getScene().getWindow();
         stage.close();
     }
-    
+    public boolean isValidEmail(String txt_email) {
+        String regexPattern = "^[\\w\\.-]+@[\\w\\.-]+\\.\\w+$";
+        Pattern pattern = Pattern.compile(regexPattern);
+        Matcher matcher = pattern.matcher(txt_email);
+        return matcher.matches();
+    }
 }

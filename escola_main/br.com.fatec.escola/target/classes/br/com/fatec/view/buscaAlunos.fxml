@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,10 +8,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="986.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.BuscaAlunosController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #809ACD;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.BuscaAlunosController">
    <children>
-      <TextField fx:id="txtBusca" layoutX="134.0" layoutY="212.0" prefHeight="31.0" prefWidth="206.0" promptText="Buscar por nome do aluno" styleClass="placeholder" />
-      <TableView fx:id="tbLista" layoutX="6.0" layoutY="295.0" onSort="#tbLista" prefHeight="429.0" prefWidth="1029.0" styleClass="tabela">
+      <TextField fx:id="txtBusca" layoutX="101.0" layoutY="204.0" prefHeight="31.0" prefWidth="206.0" promptText="Buscar por nome do aluno" styleClass="placeholder" />
+      <TableView fx:id="tbLista" layoutX="3.0" layoutY="291.0" onSort="#tbLista" prefHeight="261.0" prefWidth="1070.0" styleClass="tabela">
         <columns>
           <TableColumn fx:id="colCpf" prefWidth="133.0" styleClass="col" text="CPF" />
             <TableColumn fx:id="colNome" prefWidth="107.0" styleClass="col" text="NOME" />
@@ -23,14 +24,24 @@
             <TableColumn fx:id="colRa" prefWidth="96.0" text="RA" />
         </columns>
       </TableView>
-      <Button fx:id="btnVoltar" layoutX="35.0" layoutY="32.0" mnemonicParsing="false" onAction="#btnVoltar" prefHeight="31.0" prefWidth="78.0" style="-fx-padding: 3;" styleClass="btn" text="🠔" textFill="WHITE">
-         
+      <Text layoutX="42.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" wrappingWidth="59.220703125">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="348.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cpf:" wrappingWidth="52.220703125">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <TextField fx:id="txtBuscaCpf" layoutX="389.0" layoutY="204.0" prefHeight="31.0" prefWidth="206.0" promptText="Buscar por cpf do aluno" styleClass="placeholder" />
+      <ImageView fitHeight="100.0" fitWidth="166.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../imagens/Logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnVoltar" layoutX="841.0" layoutY="34.0" mnemonicParsing="false" onAction="#btnVoltar" prefHeight="42.0" prefWidth="104.0" style="-fx-background-color: WHITE;" text="VOLTAR">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
       </Button>
-      <Hyperlink fx:id="btnSair" layoutX="1005.0" layoutY="33.0" onAction="#btnSair" styleClass="sair" text="SAIR" textFill="#ffdf2b">
-         
-      </Hyperlink>
-      <Text layoutX="81.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" wrappingWidth="52.220703125" />
-      <Text layoutX="361.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cpf" wrappingWidth="52.220703125" />
-      <TextField fx:id="txtBuscaCpf" layoutX="414.0" layoutY="212.0" prefHeight="31.0" prefWidth="206.0" promptText="Buscar por cpf do aluno" styleClass="placeholder" />
    </children>
 </AnchorPane>
