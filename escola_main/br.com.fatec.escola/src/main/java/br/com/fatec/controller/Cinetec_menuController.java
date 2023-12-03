@@ -45,13 +45,6 @@ public class Cinetec_menuController implements Initializable {
         // TODO
     }    
 
-    private void btnCadFilmes(ActionEvent event) throws IOException {
-        cadFilmesTela cad = new cadFilmesTela();
-        cad.start(new Stage());
-        Stage stage = (Stage) btnCadFilmes.getScene().getWindow();
-        stage.close();
-    }
-
     private void btnCadSessao(ActionEvent event) throws IOException {
         salaTela cad = new salaTela();
         cad.start(new Stage());
@@ -59,13 +52,6 @@ public class Cinetec_menuController implements Initializable {
         stage.close();
     }
 
-
-    private void btnCadDis(ActionEvent event) throws IOException {
-        distribuidoraTela dis = new distribuidoraTela();
-        dis.start(new Stage());
-        Stage stage = (Stage) btnCadDis.getScene().getWindow();
-        stage.close();
-    }
 
 
     @FXML
