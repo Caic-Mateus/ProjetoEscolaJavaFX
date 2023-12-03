@@ -20,7 +20,7 @@ import javafx.stage.Stage;
  *
  * @author Leonardo
  */
-public class Cinetec_menuController implements Initializable {
+public class MenuController implements Initializable {
 
     private Button btnCadFilmes;
     private Button btnCadSessao;

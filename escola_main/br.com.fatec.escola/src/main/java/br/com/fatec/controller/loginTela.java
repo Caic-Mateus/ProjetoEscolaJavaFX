@@ -28,7 +28,7 @@ public class loginTela extends Application{
         
         FXMLLoader fxmlLoader = new FXMLLoader(Principal.class.getResource("view/login.fxml"));
         Parent root = fxmlLoader.load();
-        Cinetec_loginController controler = fxmlLoader.getController();
+        LoginController controler = fxmlLoader.getController();
         
         Scene scene = new Scene(root);
         Image icon = new Image(getClass().getResourceAsStream("/imagens/Logo.png"));

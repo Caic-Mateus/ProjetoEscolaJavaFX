@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="865.0" style="-fx-background-color: #809ACD;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.Cinetec_loginController">
+<AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="865.0" style="-fx-background-color: #809ACD;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.LoginController">
     <stylesheets>
         <URL value="@/br/com/fatec/styles/cinetec_login.css" />
     </stylesheets>

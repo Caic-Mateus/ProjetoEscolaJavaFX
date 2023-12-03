@@ -27,7 +27,7 @@ import javafx.stage.Stage;
  *
  * @author Leonardo
  */
-public class Cinetec_loginController implements Initializable {
+public class LoginController implements Initializable {
 
     @FXML
     private Button btn_login;

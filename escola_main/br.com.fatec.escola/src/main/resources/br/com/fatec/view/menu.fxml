@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="986.0" style="-fx-background-color: #809ACD;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.Cinetec_menuController">
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="986.0" style="-fx-background-color: #809ACD;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.MenuController">
     <stylesheets>
         <URL value="@/br/com/fatec/styles/cinetec_menu.css" />
     </stylesheets>
