@@ -10,7 +10,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="986.0" style="-fx-background-color: #809ACD;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.Cadastro_ProfessorController">
     <children>
-      <TextField fx:id="txt_nome" layoutX="140.0" layoutY="251.0" prefHeight="31.0" prefWidth="166.0" />
+      <TextField fx:id="txt_nome" layoutX="138.0" layoutY="202.0" prefHeight="31.0" prefWidth="166.0" />
       <Label layoutX="70.0" layoutY="204.0" prefHeight="27.0" prefWidth="68.0" text="Nome:">
          <font>
             <Font size="18.0" />
@@ -19,7 +19,7 @@
          <font>
             <Font size="18.0" />
          </font></Label>
-      <TextField fx:id="txt_email" layoutX="138.0" layoutY="205.0" prefHeight="31.0" prefWidth="166.0" />
+      <TextField fx:id="txt_email" layoutX="138.0" layoutY="251.0" prefHeight="31.0" prefWidth="166.0" />
       <TextField fx:id="txt_cpf" layoutX="138.0" layoutY="157.0" prefHeight="31.0" prefWidth="166.0" />
       <Label layoutX="90.0" layoutY="157.0" prefHeight="35.0" prefWidth="39.0" text="CPF:">
          <font>

@@ -107,7 +107,7 @@ public class BuscaAlunosController implements Initializable {
             tbLista.setItems(alunos);
            }
            catch (SQLException ex) {
-            Logger.getLogger(Cinetec_listaController.class.getName()).log(Level.SEVERE, "Erro ao buscar filmes", ex);
+            Logger.getLogger(Cadastro_AlunoController.class.getName()).log(Level.SEVERE, "Erro ao buscar filmes", ex);
         }
        });
         
@@ -124,7 +124,7 @@ public class BuscaAlunosController implements Initializable {
             tbLista.setItems(alunos);
 
         } catch (SQLException ex) {
-            Logger.getLogger(Cinetec_listaController.class.getName()).log(Level.SEVERE, "Erro ao buscar filmes", ex);
+            Logger.getLogger(Cadastro_AlunoController.class.getName()).log(Level.SEVERE, "Erro ao buscar filmes", ex);
         }
     });
     }    
