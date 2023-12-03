@@ -5,7 +5,6 @@
 package br.com.fatec.controller;
 
 import br.com.fatec.DAO.CadastroProfessorDAO;
-import br.com.fatec.DAO.DistribuidoraDAO;
 import br.com.fatec.model.CadProfessor;
 import java.io.IOException;
 import java.net.URL;
