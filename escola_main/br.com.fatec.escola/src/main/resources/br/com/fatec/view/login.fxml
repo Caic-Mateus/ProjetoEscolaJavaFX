@@ -17,7 +17,6 @@
    <children>
       <TextField fx:id="txt_user" layoutX="319.0" layoutY="341.0" prefHeight="31.0" prefWidth="247.0" promptText="exemplo@gmail.com" />
       <PasswordField fx:id="txt_senha" layoutX="318.0" layoutY="408.0" prefHeight="31.0" prefWidth="247.0" promptText="*******" />
-      <Hyperlink fx:id="linkCadastro" layoutX="392.0" layoutY="465.0" onAction="#linkCad" styleClass="hplink" text="Cadastre-se aqui!" textOverrun="CLIP" />
       <Button fx:id="btn_login" layoutX="360.0" layoutY="494.0" mnemonicParsing="false" onAction="#btn_login" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: white;" text="LOG IN">
          <font>
             <Font name="System Bold" size="15.0" />
@@ -27,7 +26,6 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Hyperlink>
-      <Label graphicTextGap="0.0" layoutX="381.0" layoutY="443.0" prefHeight="28.0" prefWidth="164.0" text="Não é cadastrado ainda?" textFill="WHITE" />
       <Label layoutX="264.0" layoutY="415.0" text="SENHA">
          <font>
             <Font name="System Bold" size="12.0" />
