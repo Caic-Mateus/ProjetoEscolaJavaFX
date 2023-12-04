@@ -68,7 +68,7 @@ public class Cadastro_SalaController implements Initializable {
             CadSala sala = moveViewParaModel();
             salas.add(sala);
             limparCampos();
-            mensagem("Sessão cadastrada com sucesso!");
+            mensagem("Sala cadastrada com sucesso!");
         } else {
             mensagem("Preencha todos os campos.");
         }

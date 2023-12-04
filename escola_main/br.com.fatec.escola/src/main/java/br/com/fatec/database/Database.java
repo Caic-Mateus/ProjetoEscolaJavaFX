@@ -9,7 +9,6 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
-import br.com.fatec.controller.Cinetec_cadastroController;
 
 /**
  *
