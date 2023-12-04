@@ -184,7 +184,7 @@ public class Cadastro_AlunoController implements Initializable {
         Stage stage = (Stage) alerta.getDialogPane().getScene().getWindow();
 
         // Add a custom icon.
-        stage.getIcons().add(new Image(this.getClass().getResource("/imagens/icon.png").toString()));
+        stage.getIcons().add(new Image(this.getClass().getResource("/imagens/logo.png").toString()));
         
         alerta.showAndWait(); //exibe mensagem
     }
@@ -199,7 +199,7 @@ public class Cadastro_AlunoController implements Initializable {
         Stage stage = (Stage) alerta.getDialogPane().getScene().getWindow();
 
         // Add a custom icon.
-        stage.getIcons().add(new Image(this.getClass().getResource("/imagens/icon.png").toString()));
+        stage.getIcons().add(new Image(this.getClass().getResource("/imagens/logo.png").toString()));
         
         alerta.showAndWait(); //exibe mensagem
     }

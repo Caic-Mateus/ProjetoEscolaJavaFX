@@ -102,7 +102,7 @@ public class LoginController implements Initializable {
         Stage stage = (Stage) alerta.getDialogPane().getScene().getWindow();
 
         // Add a custom icon.
-        stage.getIcons().add(new Image(this.getClass().getResource("/imagens/icon.png").toString()));      
+        stage.getIcons().add(new Image(this.getClass().getResource("/imagens/Logo.png").toString()));      
         
         alerta.showAndWait(); //exibe mensagem
     }
@@ -117,7 +117,7 @@ public class LoginController implements Initializable {
         Stage stage = (Stage) alerta.getDialogPane().getScene().getWindow();
 
         // Add a custom icon.
-        stage.getIcons().add(new Image(this.getClass().getResource("/imagens/icon.png").toString()));
+        stage.getIcons().add(new Image(this.getClass().getResource("/imagens/Logo.png").toString()));
         
         alerta.showAndWait(); //exibe mensagem
     }
