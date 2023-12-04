@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Leonardo
+ * @author Caic
  */
 public class listaTela extends Application{
     public static Stage tela;

@@ -6,7 +6,7 @@ package br.com.fatec.model;
 
 /**
  *
- * @author Larica
+ * @author Caic
  */
 public class Home {
     private String onze, uma, tres, cinco, sete, dez, nome_filme;

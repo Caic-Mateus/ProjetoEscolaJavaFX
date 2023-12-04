@@ -9,7 +9,7 @@ import java.util.Collection;
 
 /**
  *
- * @author Larica
+ * @author Caic
  */
 public interface DAO <T> {
     public boolean insere(T model) 

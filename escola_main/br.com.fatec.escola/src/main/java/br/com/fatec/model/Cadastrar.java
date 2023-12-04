@@ -6,7 +6,7 @@ package br.com.fatec.model;
 
 /**
  *
- * @author Larica
+ * @author Caic
  */
 public class Cadastrar {
    

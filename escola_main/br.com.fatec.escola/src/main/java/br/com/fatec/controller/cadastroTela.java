@@ -16,7 +16,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Leonardo
+ * @author Caic
  */
 public class cadastroTela extends Application{
     public static Stage tela;

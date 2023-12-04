@@ -14,7 +14,7 @@ import java.sql.Statement;
 
 /**
  *
- * @author Larica
+ * @author Caic
  */
 public class LoginDAO {
 
