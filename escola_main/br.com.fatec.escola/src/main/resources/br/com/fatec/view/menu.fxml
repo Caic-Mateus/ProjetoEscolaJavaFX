@@ -11,7 +11,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="986.0" style="-fx-background-color: #809ACD;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.MenuController">
     <stylesheets>
-        <URL value="@/br/com/fatec/styles/cinetec_menu.css" />
+        <URL value="@/br/com/fatec/styles/menu.css" />
     </stylesheets>
    <children>
       <Button fx:id="btnCadProf" layoutX="196.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnCadProf" prefHeight="93.0" prefWidth="278.0" style="-fx-background-color: white;" text="CADASTRO PROFESSOR">

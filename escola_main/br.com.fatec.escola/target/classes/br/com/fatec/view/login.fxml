@@ -12,7 +12,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="649.0" prefWidth="865.0" style="-fx-background-color: #809ACD;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.fatec.controller.LoginController">
     <stylesheets>
-        <URL value="@/br/com/fatec/styles/cinetec_login.css" />
+        <URL value="@/br/com/fatec/styles/login.css" />
     </stylesheets>
    <children>
       <TextField fx:id="txt_user" layoutX="319.0" layoutY="341.0" prefHeight="31.0" prefWidth="247.0" promptText="exemplo@gmail.com" />
